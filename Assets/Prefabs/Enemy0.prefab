@@ -183,7 +183,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3f8c09055a6d54e9cec6d2d3a1af72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayer: 0
   health: 30
+  score: 50
+  hitEffect: {fileID: 8085449264852864383, guid: f2702d32a4b01fd48861d96e6e91d8e8, type: 3}
+  applyCameraShake: 0
 --- !u!114 &1942613815341667117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3705b53e39685164db12763d49dbb1eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 50
 --- !u!114 &7904778852365862399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +218,6 @@ MonoBehaviour:
   projectileLifeTime: 5
   baseFiringRate: 0.2
   useAI: 1
-  firingRateVariance: 0.5
-  minimumFiringRate: 0.1
+  firingRateVariance: 0.6
+  minimumFiringRate: 0.4
   isFiring: 0
