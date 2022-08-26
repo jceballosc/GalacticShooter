@@ -13,6 +13,10 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField] AudioClip explosionClip;
     [SerializeField][Range(0f, 1f)] float explosionVolume = 1f;
 
+    [Header("Game Over")]
+    [SerializeField] AudioClip gameOverClip;
+    [SerializeField][Range(0f, 1f)] float gameOverVolume = 1f;
+
     public void PlayShootingClip()
     {
         PlayClip(shootingClip, shootingVolume);
@@ -21,6 +25,12 @@ public class AudioPlayer : MonoBehaviour
     public void PlayExplosionClip()
     {
         PlayClip(explosionClip, explosionVolume);
+
+    }
+
+    public void PlayGameOverClip()
+    {
+        PlayClip(gameOverClip, gameOverVolume);
 
     }
 
