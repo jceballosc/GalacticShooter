@@ -46,7 +46,7 @@ public class Health : MonoBehaviour
     {
         health -= damage;
         if (health <= 0)
-        {
+        {    
             Die();
         }
     }
@@ -62,7 +62,7 @@ public class Health : MonoBehaviour
             audioPlayer.PlayGameOverClip();
             levelManager.GameOver();
         }
-        
+
         Destroy(gameObject);
     }
 

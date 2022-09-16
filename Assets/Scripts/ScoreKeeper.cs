@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class ScoreKeeper : MonoBehaviour
 {
     int score;
     static ScoreKeeper instance;
-
+    
     void Awake()
     {
         ManageSingleton();
@@ -28,7 +29,7 @@ public class ScoreKeeper : MonoBehaviour
 
     public int GetScore()
     {
-        return score;
+        return score;   
     }
 
     public void ModifyScore(int value)
