@@ -573,6 +573,50 @@ MonoBehaviour:
   healthSlider: {fileID: 1863326074}
   playerHealth: {fileID: 2044762167}
   scoreText: {fileID: 1084896660}
+--- !u!1 &1011745431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1011745433}
+  - component: {fileID: 1011745432}
+  m_Layer: 0
+  m_Name: Player Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1011745432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011745431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce68b5ea56c21a84c9e7e734e057d6ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1011745433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011745431}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.113894, y: 0.29609138, z: 0.7585296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1054238600
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1692015897197759382, guid: 6163ba392dbeb2f459c890b7c8aea46f, type: 3}
+      propertyPath: leaderboard
+      value: 
+      objectReference: {fileID: 1487733346}
     - target: {fileID: 2715185431407477732, guid: 6163ba392dbeb2f459c890b7c8aea46f, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -919,6 +967,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471202534}
   m_CullTransparentMesh: 1
+--- !u!1 &1487733345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1487733347}
+  - component: {fileID: 1487733346}
+  m_Layer: 0
+  m_Name: Leaderboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1487733346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487733345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3df351f2d6416a4e8967952074dd9f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1487733347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487733345}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.113894, y: 0.29609138, z: 0.7585296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1524380181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,6 +1421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreKeeper
       objectReference: {fileID: 0}
+    - target: {fileID: 2465073676791264285, guid: 654eb2f82c539f14c9f1fdc339f7d7b8, type: 3}
+      propertyPath: leaderboard
+      value: 
+      objectReference: {fileID: 1487733346}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 654eb2f82c539f14c9f1fdc339f7d7b8, type: 3}
 --- !u!1001 &3665830673610953677
@@ -1390,6 +1486,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8226461931471905420, guid: 57c7061cd956957418bf0c3bfada260a, type: 3}
+      propertyPath: leaderboard
+      value: 
+      objectReference: {fileID: 1487733346}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57c7061cd956957418bf0c3bfada260a, type: 3}
 --- !u!1001 &3844309755319204892

@@ -309,7 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 226829058}
-  playfabManager: {fileID: 0}
+  leaderboard: {fileID: 0}
 --- !u!1 &98383424
 GameObject:
   m_ObjectHideFlags: 0
