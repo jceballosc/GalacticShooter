@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using LootLocker.Requests;
 using TMPro;
-using UnityEditor.PackageManager;
+/*using UnityEditor.PackageManager;*/
 
 public class PlayerManager : MonoBehaviour
 {
