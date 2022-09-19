@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d677f1681015749b15c436eec6d880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MovementRange: 50
+  m_MovementRange: 100
   m_ControlPath: <Gamepad>/leftStick
 --- !u!1 &700964411
 GameObject:
@@ -589,7 +589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1011745432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -602,6 +602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce68b5ea56c21a84c9e7e734e057d6ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leaderboard: {fileID: 0}
+  playerNameInputField: {fileID: 0}
 --- !u!4 &1011745433
 Transform:
   m_ObjectHideFlags: 0
@@ -983,7 +985,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1487733346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -996,6 +998,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3df351f2d6416a4e8967952074dd9f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerNames: {fileID: 0}
+  playerScores: {fileID: 0}
 --- !u!4 &1487733347
 Transform:
   m_ObjectHideFlags: 0

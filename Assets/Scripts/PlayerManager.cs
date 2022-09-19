@@ -2,13 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using LootLocker.Requests;
+using TMPro;
+using UnityEditor.PackageManager;
 
 public class PlayerManager : MonoBehaviour
 {
+    public Leaderboard leaderboard;
+    public TMP_InputField playerNameInputField;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(LoginRoutine());
+        StartCoroutine(SetupRoutine());
+    }
+
+    public void SetPlayerName()
+    {
+        LootLockerSDKManager.SetPlayerName(playerNameInputField.text, (response) =>
+        {
+            if (response.success)
+            {
+                Debug.Log("Succesfully set player name");
+            }
+            else
+            {
+                Debug.Log("Could not set player name"+response.Error);
+            }
+        });
+    }
+
+    IEnumerator SetupRoutine()
+    {
+        yield return LoginRoutine();
+        yield return leaderboard.FetchTopHighScoresRoutine();
     }
 
     IEnumerator LoginRoutine()
